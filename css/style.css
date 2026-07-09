@@ -272,3 +272,74 @@ footer ul {
     padding: 2rem 1rem;
   }
 }
+
+/* about - education articles */
+#education article {
+  background: var(--bg-alt);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+/* about - aspirations & hobbies lists */
+#aspirations ul,
+#hobbies ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#aspirations li,
+#hobbies li {
+  background: var(--bg-alt);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--accent);
+}
+
+/* about - skills groups */
+#skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skill-group {
+  background: var(--bg-alt);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.skill-group h3 {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skill-group ul {
+  list-style: none;
+}
+
+.skill-group li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-group li:last-child {
+  border-bottom: none;
+}
+
+/* nav active link */
+nav a.active {
+  color: var(--accent);
+  font-weight: 700;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+}
