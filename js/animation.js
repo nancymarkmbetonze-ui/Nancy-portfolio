@@ -13,3 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+
+// mobile menu toggle
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.querySelector(".menu-toggle");
+  var nav = document.querySelector("header nav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      nav.classList.toggle("mobile-open");
+    });
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("mobile-open");
+      });
+    });
+  }
+});
