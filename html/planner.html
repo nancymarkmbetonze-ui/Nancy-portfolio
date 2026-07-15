@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nancy Mark | Academic Planner</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- header -->
+<header>
+  <div class="site-branding">
+    <span class="site-name">Nancy Mark</span>
+    <span class="site-tagline">Python Developer | Aviation Manager &amp; Dangerous Goods Handler</span>
+    <span class="site-subline">Miva Open University &amp; Universal School of Aviation</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- planner -->
+<section id="planner">
+  <h1>Academic Planner</h1>
+  <p>Add, track, and manage academic tasks and deadlines.</p>
+
+  <form id="task-form">
+    <label for="task-input">Task</label>
+    <input type="text" id="task-input" placeholder="Task name" required>
+    <label for="task-due">Due Date</label>
+    <input type="date" id="task-due">
+    <button type="submit" class="btn">Add Task</button>
+  </form>
+
+  <ul id="task-list"></ul>
+  <p id="empty-state">No tasks yet. Add one above.</p>
+</section>
+
+<!-- footer -->
+<footer>
+  <h2>Let's Connect</h2>
+  <p>I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
+  <ul>
+    <li><a href="#">Email</a></li>
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">LinkedIn</a></li>
+  </ul>
+  <p>&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<!-- planner script -->
+<script src="../js/planner.js"></script>
+
+</body>
+</html>
