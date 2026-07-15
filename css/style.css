@@ -580,63 +580,6 @@ footer ul {
   gap: 0.75rem;
 }
 
-/* task list item */
-#task-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--surface);
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius);
-  border-left: 4px solid var(--teal);
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-/* completed task state */
-#task-list li.completed {
-  border-left-color: var(--text-muted);
-  opacity: 0.6;
-}
-
-#task-list li.completed span {
-  text-decoration: line-through;
-}
-
-/* task list buttons base */
-#task-list li button {
-  padding: 0.4rem 0.9rem;
-  border-radius: var(--radius-sm);
-  border: none;
-  cursor: pointer;
-  font-size: 0.85rem;
-  margin-left: 0.5rem;
-  transition: background var(--transition);
-}
-
-/* complete button */
-#task-list li button:first-of-type {
-  background: var(--teal);
-  color: var(--surface);
-}
-
-#task-list li button:first-of-type:hover {
-  background: var(--teal);
-  opacity: 0.85;
-}
-
-/* delete button */
-#task-list li button:last-of-type {
-  background: transparent;
-  color: #B54A3F;
-  border: 1px solid #B54A3F;
-}
-
-#task-list li button:last-of-type:hover {
-  background: #B54A3F;
-  color: var(--surface);
-}
-
 /* empty state message */
 #empty-state {
   color: var(--text-muted);
@@ -774,4 +717,65 @@ footer ul {
   .container {
     padding: 0 1.25rem;
   }
+}
+
+/* planner task list */
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: var(--surface);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--teal);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+#task-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+#task-list li.completed {
+  border-left-color: var(--text-muted);
+  opacity: 0.6;
+}
+
+#task-list li.completed span {
+  text-decoration: line-through;
+}
+
+#task-list li button {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  transition: all var(--transition);
+}
+
+#task-list li button:first-of-type {
+  background: var(--teal);
+  color: var(--surface);
+}
+
+#task-list li button:first-of-type:hover {
+  background: var(--primary);
+}
+
+#task-list li button:last-of-type {
+  background: transparent;
+  color: #B54A3F;
+  border: 1px solid #B54A3F;
+}
+
+#task-list li button:last-of-type:hover {
+  background: #B54A3F;
+  color: var(--surface);
 }
