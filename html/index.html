@@ -10,140 +10,181 @@
 
 <!-- header -->
 <header>
-  <div class="site-branding">
-    <span class="site-name">Nancy Mark</span>
-    <span class="site-tagline">Python Developer | Aviation Manager &amp; Dangerous Goods Handler</span>
-    <span class="site-subline">Miva Open University &amp; Universal School of Aviation</span>
+  <div class="brand">
+    <img src="../images/Nancy.png" alt="Nancy Mark">
+    <h1>Nancy Mark</h1>
   </div>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="planner.html">Planner</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
+<main class="container">
+
 <!-- hero -->
-<section id="hero">
-  <h1>Building Reliable Systems, On the Ground and In the Air</h1>
-  <p>Welcome — I am a backend-focused developer and aviation professional who values precision in code and in the skies.</p>
-  <img src="../images/Nancy.png" alt="Nancy Mark">
-  <a href="projects.html" class="cta-button">View Projects</a>
+<section class="hero" style="display:flex; align-items:center; gap:3rem; flex-wrap:wrap; padding:3rem 0;">
+  <div style="flex:1; min-width:300px;">
+    <span class="pill">Python Developer &amp; Aviation Professional</span>
+    <h2 style="font-size:clamp(2rem, 4vw, 2.8rem); margin-top:1rem;">Building Reliable Systems, On the Ground and In the Air</h2>
+    <p style="color:var(--text-muted); margin-top:1rem; font-size:1.05rem;">Welcome — I am a backend-focused developer and aviation professional who values precision in code and in the skies.</p>
+    <a href="projects.html" class="btn" style="margin-top:1.5rem;">View Projects</a>
+  </div>
+  <div style="flex:1; min-width:260px; position:relative;">
+    <img src="../images/Nancy.png" alt="Nancy Mark" class="animate-float" style="width:100%; max-width:320px; aspect-ratio:1/1; object-fit:cover; border-radius:2rem; box-shadow:var(--shadow-hover); border:6px solid var(--surface); display:block; margin:0 auto;">
+  </div>
 </section>
 
-<!-- biography -->
-<section id="biography">
-  <h2>Biography</h2>
-  <h3>My Story</h3>
-  <p>I am a Computer Science student at Miva Open University with a strong focus on backend development and system design, building reliable APIs with Python frameworks like Flask, Django, and FastAPI. Alongside this, I am pursuing Aviation Management at Universal School of Aviation, training in dangerous goods handling, cabin crew operations, and flight dispatch. I enjoy the way both worlds reward precision — clean, dependable code and the discipline aviation demands. Outside of work, I find joy in reading, writing, travelling, singing, and cooking.</p>
-  <aside>
-    <h4>Technical Skills</h4>
-    <ul>
-      <li>Python</li>
-      <li>Flask</li>
-      <li>Django</li>
-      <li>FastAPI</li>
-      <li>REST API Design</li>
-      <li>AI Automation</li>
-      <li>n8n</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Tailwind CSS</li>
+<!-- about & skills -->
+<section class="bento-grid fade-in-section" style="margin-top:2rem;">
+  <div class="col-8 glass-card">
+    <h2>My Story</h2>
+    <p style="margin-top:0.75rem;">I am a Computer Science student at Miva Open University with a strong focus on backend development and system design, building reliable APIs with Python frameworks like Flask, Django, and FastAPI.</p>
+    <p style="margin-top:0.75rem;">Alongside this, I am pursuing Aviation Management at Universal School of Aviation, training in dangerous goods handling, cabin crew operations, and flight dispatch. I enjoy the way both worlds reward precision — clean, dependable code and the discipline aviation demands.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+      <span class="tag">Backend Dev</span>
+      <span class="tag">Aviation</span>
+      <span class="tag">Automation</span>
+    </div>
+  </div>
+  <div class="col-4 dark-card">
+    <h3 style="color:var(--surface); margin-bottom:1rem;">Technical Skills</h3>
+    <ul style="list-style:none; padding:0; margin:0;">
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">Python</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">Flask</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">Django</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">FastAPI</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">REST API Design</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">AI Automation</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">n8n</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">HTML</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">CSS</li>
+      <li style="padding:0.4rem 0; border-bottom:1px solid rgba(255,255,255,0.15); color:var(--surface);">JavaScript</li>
+      <li style="padding:0.4rem 0; color:var(--surface);">Tailwind CSS</li>
     </ul>
-  </aside>
+  </div>
 </section>
 
-<!-- academic-profile -->
-<section id="academic-profile">
+<!-- academic profile -->
+<section class="fade-in-section" style="margin-top:3rem;">
   <h2>Academic Profile</h2>
-  <h3>Academic and programme information</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Detail</th>
-        <th>Information</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Institution</td>
-        <td>Miva Open University</td>
-      </tr>
-      <tr>
-        <td>Programme</td>
-        <td>B.Sc. Computer Science</td>
-      </tr>
-      <tr>
-        <td>Focus Area</td>
-        <td>Backend Development and System Design</td>
-      </tr>
-      <tr>
-        <td>Status</td>
-        <td>In Progress</td>
-      </tr>
-      <tr>
-        <td>Institution</td>
-        <td>Universal School of Aviation</td>
-      </tr>
-      <tr>
-        <td>Programme</td>
-        <td>Aviation Management — Dangerous Goods Handling, Cabin Crew, Flight Dispatch</td>
-      </tr>
-      <tr>
-        <td>Status</td>
-        <td>In Progress</td>
-      </tr>
-    </tbody>
-  </table>
+  <p style="color:var(--text-muted); margin-top:0.5rem;">Academic and programme information</p>
+  <div class="solid-card" style="margin-top:1rem; padding:0; overflow:hidden;">
+    <table style="width:100%; border-collapse:collapse;">
+      <thead>
+        <tr>
+          <th style="border-bottom:2px solid var(--primary); color:var(--primary); text-align:left; padding:0.75rem;">Detail</th>
+          <th style="border-bottom:2px solid var(--primary); color:var(--primary); text-align:left; padding:0.75rem;">Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Institution</td>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Miva Open University</td>
+        </tr>
+        <tr>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Programme</td>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">B.Sc. Computer Science</td>
+        </tr>
+        <tr>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Focus Area</td>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Backend Development and System Design</td>
+        </tr>
+        <tr>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Status</td>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">In Progress</td>
+        </tr>
+        <tr>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Institution</td>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Universal School of Aviation</td>
+        </tr>
+        <tr>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Programme</td>
+          <td style="padding:0.75rem; border-bottom:1px solid var(--border);">Aviation Management — Dangerous Goods Handling, Cabin Crew, Flight Dispatch</td>
+        </tr>
+        <tr>
+          <td style="padding:0.75rem;">Status</td>
+          <td style="padding:0.75rem;">In Progress</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
-<!-- quick-links -->
-<section id="quick-links">
+<!-- explore the site -->
+<section class="fade-in-section" style="margin-top:3rem;">
   <h2>Explore the Site</h2>
-  <article>
-    <h3>About Me</h3>
-    <p>Learn about my educational background, career goals, and interests.</p>
-    <a href="about.html">About Me</a>
-  </article>
-  <article>
-    <h3>Projects</h3>
-    <p>Explore projects combining backend development and automation.</p>
-    <a href="projects.html">Projects</a>
-  </article>
-  <article>
-    <h3>Academic Planner</h3>
-    <p>An interactive planner to track academic tasks and deadlines.</p>
-    <a href="planner.html">Academic Planner</a>
-  </article>
-  <article>
-    <h3>Contact</h3>
-    <p>Interested in collaborating or discussing opportunities? Reach out.</p>
-    <a href="contact.html">Contact</a>
-  </article>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1.5rem; margin-top:1rem;">
+    <div class="glass-card">
+      <h3>About Me</h3>
+      <p style="color:var(--text-muted); margin-top:0.5rem;">Learn about my educational background, career goals, and interests.</p>
+      <a href="about.html" class="btn btn-outline" style="margin-top:1rem;">About Me</a>
+    </div>
+    <div class="glass-card">
+      <h3>Projects</h3>
+      <p style="color:var(--text-muted); margin-top:0.5rem;">Explore projects combining backend development and automation.</p>
+      <a href="projects.html" class="btn btn-outline" style="margin-top:1rem;">Projects</a>
+    </div>
+    <div class="glass-card">
+      <h3>Academic Planner</h3>
+      <p style="color:var(--text-muted); margin-top:0.5rem;">An interactive planner to track academic tasks and deadlines.</p>
+      <a href="planner.html" class="btn btn-outline" style="margin-top:1rem;">Planner</a>
+    </div>
+    <div class="glass-card">
+      <h3>Contact</h3>
+      <p style="color:var(--text-muted); margin-top:0.5rem;">Interested in collaborating or discussing opportunities? Reach out.</p>
+      <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;">Contact</a>
+    </div>
+  </div>
 </section>
 
-<!-- cta-banner -->
-<section id="cta-banner">
+<!-- cta -->
+<section class="dark-card fade-in-section" style="margin-top:3rem; text-align:center; padding:3rem;">
   <h2>Ready to build something reliable together?</h2>
-  <p>Explore the rest of the portfolio to learn more about my work and background.</p>
-  <a href="contact.html" class="cta-button">Contact Me</a>
+  <p style="color:rgba(255,255,255,0.85); margin-top:0.75rem;">Explore the rest of the portfolio to learn more about my work and background.</p>
+  <a href="contact.html" class="btn" style="background:var(--surface); color:var(--primary); margin-top:1rem;">Contact Me</a>
 </section>
+
+</main>
 
 <!-- footer -->
-<footer>
-  <h2>Let's Connect</h2>
-  <p>I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
-  <ul>
-    <li><a href="#">Email</a></li>
-    <li><a href="#">GitHub</a></li>
-    <li><a href="#">LinkedIn</a></li>
-  </ul>
-  <p>&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
+<footer style="background:var(--surface); border-top:1px solid var(--border); padding:3rem 2rem; text-align:center; margin-top:3rem;">
+  <h3>Let's Connect</h3>
+  <p style="color:var(--text-muted); margin-top:0.5rem;">I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
+  <div style="display:flex; justify-content:center; gap:1.5rem; margin-top:1rem;">
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">Email</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">GitHub</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">LinkedIn</a>
+  </div>
+  <p style="margin-top:1rem; font-size:0.85rem; color:var(--text-muted);">&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
 </footer>
+
+<!-- bottom mobile nav -->
+<nav class="bottom-nav">
+  <a href="index.html" class="active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="about.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+  <a href="projects.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    <span>Projects</span>
+  </a>
+  <a href="planner.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>Planner</span>
+  </a>
+  <a href="contact.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
 
 </body>
 </html>
