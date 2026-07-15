@@ -10,52 +10,89 @@
 
 <!-- header -->
 <header>
-  <div class="site-branding">
-    <span class="site-name">Nancy Mark</span>
-    <span class="site-tagline">Python Developer | Aviation Manager &amp; Dangerous Goods Handler</span>
-    <span class="site-subline">Miva Open University &amp; Universal School of Aviation</span>
+  <div class="brand">
+    <img src="../images/Nancy.png" alt="Nancy Mark">
+    <h1>Nancy Mark</h1>
   </div>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="planner.html" class="active">Planner</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html" class="active">Planner</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<!-- planner -->
-<section id="planner">
-  <h1>Academic Planner</h1>
-  <p>Add, track, and manage academic tasks and deadlines.</p>
+<main class="container">
 
-  <form id="task-form">
-    <label for="task-input">Task</label>
-    <input type="text" id="task-input" placeholder="Task name" required>
-    <label for="task-due">Due Date</label>
-    <input type="date" id="task-due">
-    <button type="submit" class="btn">Add Task</button>
-  </form>
-
-  <ul id="task-list"></ul>
-  <p id="empty-state">No tasks yet. Add one above.</p>
+<!-- hero -->
+<section style="padding:3rem 0 1rem;">
+  <span class="pill">Academic Planner</span>
+  <h2 style="font-size:clamp(2rem, 4vw, 2.8rem); margin-top:1rem;">Stay On Top of Deadlines</h2>
+  <p style="color:var(--text-muted); margin-top:0.75rem; font-size:1.05rem;">Add, track, and manage academic tasks and deadlines.</p>
 </section>
 
+<!-- task form -->
+<section class="fade-in-section glass-card" style="margin-top:1rem; padding:2rem;">
+  <form id="task-form" style="display:flex; gap:1rem; flex-wrap:wrap; align-items:flex-end;">
+    <div>
+      <label for="task-input" style="display:block; font-size:0.85rem; color:var(--text-muted); margin-bottom:0.3rem;">Task Name</label>
+      <input type="text" id="task-input" placeholder="Task name" required style="padding:0.7rem 1rem; border:1px solid var(--border); border-radius:10px; font-size:1rem; min-width:200px;">
+    </div>
+    <div>
+      <label for="task-due" style="display:block; font-size:0.85rem; color:var(--text-muted); margin-bottom:0.3rem;">Due Date</label>
+      <input type="date" id="task-due" style="padding:0.7rem 1rem; border:1px solid var(--border); border-radius:10px; font-size:1rem; min-width:200px;">
+    </div>
+    <button type="submit" class="btn">Add Task</button>
+  </form>
+</section>
+
+<!-- task list -->
+<section class="fade-in-section" style="margin-top:2rem;">
+  <ul id="task-list" style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.75rem;"></ul>
+  <p id="empty-state" style="text-align:center; color:var(--text-muted); padding:2rem; font-style:italic;">No tasks yet. Add one above.</p>
+</section>
+
+</main>
+
 <!-- footer -->
-<footer>
-  <h2>Let's Connect</h2>
-  <p>I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
-  <ul>
-    <li><a href="#">Email</a></li>
-    <li><a href="#">GitHub</a></li>
-    <li><a href="#">LinkedIn</a></li>
-  </ul>
-  <p>&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
+<footer style="background:var(--surface); border-top:1px solid var(--border); padding:3rem 2rem; text-align:center; margin-top:3rem;">
+  <h3>Let's Connect</h3>
+  <p style="color:var(--text-muted); margin-top:0.5rem;">I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
+  <div style="display:flex; justify-content:center; gap:1.5rem; margin-top:1rem;">
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">Email</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">GitHub</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">LinkedIn</a>
+  </div>
+  <p style="margin-top:1rem; font-size:0.85rem; color:var(--text-muted);">&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
 </footer>
 
-<!-- planner script -->
+<!-- bottom mobile nav -->
+<nav class="bottom-nav">
+  <a href="index.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="about.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+  <a href="projects.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    <span>Projects</span>
+  </a>
+  <a href="planner.html" class="active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>Planner</span>
+  </a>
+  <a href="contact.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<!-- scripts -->
+<script src="../js/animation.js"></script>
 <script src="../js/planner.js"></script>
 
 </body>
