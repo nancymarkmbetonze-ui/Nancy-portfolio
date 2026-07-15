@@ -10,100 +10,146 @@
 
 <!-- header -->
 <header>
-  <div class="site-branding">
-    <span class="site-name">Nancy Mark</span>
-    <span class="site-tagline">Python Developer | Aviation Manager &amp; Dangerous Goods Handler</span>
-    <span class="site-subline">Miva Open University &amp; Universal School of Aviation</span>
+  <div class="brand">
+    <img src="../images/Nancy.png" alt="Nancy Mark">
+    <h1>Nancy Mark</h1>
   </div>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="planner.html">Planner</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<!-- education -->
-<section id="education">
-  <h2>Educational Background</h2>
-  <article>
-    <h3>B.Sc. Computer Science — Miva Open University</h3>
-    <p>Currently pursuing a Bachelor's degree in Computer Science, focused on backend development and system design. Building practical experience in API design and automation using Python frameworks.</p>
-  </article>
-  <article>
-    <h3>Aviation Management — Universal School of Aviation</h3>
-    <p>Training in Aviation Management, with specialized focus on Dangerous Goods Handling, Cabin Crew operations, and Flight Dispatch.</p>
-  </article>
+<main class="container">
+
+<!-- hero -->
+<section style="padding:3rem 0 1rem;">
+  <span class="pill">About Me</span>
+  <h2 style="font-size:clamp(2rem, 4vw, 2.8rem); margin-top:1rem;">The Story Behind the Code</h2>
+  <p style="color:var(--text-muted); margin-top:0.75rem; font-size:1.05rem;">A closer look at my educational background, career goals, technical skills, and the things I enjoy outside of work.</p>
 </section>
 
-<!-- aspirations -->
-<section id="aspirations">
-  <h2>Career Aspirations</h2>
-  <p>My goal is to grow as a Software Engineer building dependable backend systems, while also pursuing a career as a Pilot. Alongside both, I write — documenting ideas, technical concepts, and personal reflections.</p>
-  <ul>
-    <li>Software Engineer — building robust, scalable backend systems</li>
-    <li>Pilot — pursuing a career in the skies with the same precision I bring to code</li>
-    <li>Writer — documenting ideas, technical concepts, and personal reflections</li>
-  </ul>
+<!-- education -->
+<section class="fade-in-section" style="margin-top:1rem;">
+  <h2>Educational Background</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-top:1rem;">
+    <div class="glass-card">
+      <h3>B.Sc. Computer Science — Miva Open University</h3>
+      <p style="color:var(--text-muted); margin-top:0.75rem;">Currently pursuing a Bachelor's degree in Computer Science, focused on backend development and system design. Building practical experience in API design and automation using Python frameworks.</p>
+    </div>
+    <div class="glass-card">
+      <h3>Aviation Management — Universal School of Aviation</h3>
+      <p style="color:var(--text-muted); margin-top:0.75rem;">Training in Aviation Management, with specialized focus on Dangerous Goods Handling, Cabin Crew operations, and Flight Dispatch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- aspirations & hobbies -->
+<section class="bento-grid fade-in-section" style="margin-top:3rem;">
+  <div class="col-7 dark-card">
+    <h2 style="color:var(--surface);">Career Aspirations</h2>
+    <p style="color:rgba(255,255,255,0.85); margin-top:0.75rem;">My goal is to grow as a Software Engineer building dependable backend systems, while also pursuing a career as a Pilot. Alongside both, I write — documenting ideas, technical concepts, and personal reflections.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+      <span style="background:rgba(255,255,255,0.15); color:var(--surface); padding:0.4rem 0.9rem; border-radius:999px; font-size:0.85rem;">Software Engineer</span>
+      <span style="background:rgba(255,255,255,0.15); color:var(--surface); padding:0.4rem 0.9rem; border-radius:999px; font-size:0.85rem;">Pilot</span>
+      <span style="background:rgba(255,255,255,0.15); color:var(--surface); padding:0.4rem 0.9rem; border-radius:999px; font-size:0.85rem;">Writer</span>
+    </div>
+  </div>
+  <div class="col-5 solid-card">
+    <h3>Hobbies and Interests</h3>
+    <ul style="list-style:none; padding:0; margin-top:0.75rem;">
+      <li style="padding:0.5rem 0; border-bottom:1px solid var(--border); color:var(--text-muted);">Reading — exploring new ideas and perspectives</li>
+      <li style="padding:0.5rem 0; border-bottom:1px solid var(--border); color:var(--text-muted);">Writing — documenting thoughts and technical concepts</li>
+      <li style="padding:0.5rem 0; border-bottom:1px solid var(--border); color:var(--text-muted);">Travelling — experiencing new places and cultures</li>
+      <li style="padding:0.5rem 0; border-bottom:1px solid var(--border); color:var(--text-muted);">Singing</li>
+      <li style="padding:0.5rem 0; color:var(--text-muted);">Cooking</li>
+    </ul>
+  </div>
 </section>
 
 <!-- skills -->
-<section id="skills">
+<section class="fade-in-section" style="margin-top:3rem;">
   <h2>Technical Skills</h2>
-  <div class="skill-group">
-    <h3>Backend Development</h3>
-    <ul>
-      <li>Python</li>
-      <li>Flask</li>
-      <li>Django</li>
-      <li>FastAPI</li>
-      <li>REST API Design</li>
-    </ul>
-  </div>
-  <div class="skill-group">
-    <h3>Automation</h3>
-    <ul>
-      <li>AI Automation</li>
-      <li>n8n</li>
-    </ul>
-  </div>
-  <div class="skill-group">
-    <h3>Frontend</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Tailwind CSS</li>
-    </ul>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1.5rem; margin-top:1rem;">
+    <div class="glass-card">
+      <h3 style="color:var(--primary);">Backend Development</h3>
+      <ul style="list-style:none; padding:0; margin-top:0.75rem;">
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">Python</li>
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">Flask</li>
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">Django</li>
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">FastAPI</li>
+        <li style="padding:0.4rem 0;">REST API Design</li>
+      </ul>
+    </div>
+    <div class="glass-card">
+      <h3 style="color:var(--primary);">Automation</h3>
+      <ul style="list-style:none; padding:0; margin-top:0.75rem;">
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">AI Automation</li>
+        <li style="padding:0.4rem 0;">n8n</li>
+      </ul>
+    </div>
+    <div class="glass-card">
+      <h3 style="color:var(--primary);">Frontend</h3>
+      <ul style="list-style:none; padding:0; margin-top:0.75rem;">
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">HTML</li>
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">CSS</li>
+        <li style="padding:0.4rem 0; border-bottom:1px solid var(--border);">JavaScript</li>
+        <li style="padding:0.4rem 0;">Tailwind CSS</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- hobbies -->
-<section id="hobbies">
-  <h2>Hobbies and Interests</h2>
-  <ul>
-    <li>Reading — exploring new ideas and perspectives</li>
-    <li>Writing — capturing thoughts, stories, and technical notes</li>
-    <li>Travelling — discovering new places and cultures</li>
-    <li>Singing — expressing creativity through music</li>
-    <li>Cooking — experimenting with flavours and recipes</li>
-  </ul>
+<!-- cta -->
+<section class="dark-card fade-in-section" style="margin-top:3rem; text-align:center; padding:3rem;">
+  <h2>Let's Build Something Together</h2>
+  <p style="color:rgba(255,255,255,0.85); margin-top:0.75rem;">Interested in working together or discussing opportunities in tech or aviation?</p>
+  <a href="contact.html" class="btn" style="background:var(--surface); color:var(--primary); margin-top:1rem;">Get In Touch</a>
 </section>
+
+</main>
 
 <!-- footer -->
-<footer>
-  <h2>Let's Connect</h2>
-  <p>I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
-  <ul>
-    <li><a href="#">Email</a></li>
-    <li><a href="#">GitHub</a></li>
-    <li><a href="#">LinkedIn</a></li>
-  </ul>
-  <p>&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
+<footer style="background:var(--surface); border-top:1px solid var(--border); padding:3rem 2rem; text-align:center; margin-top:3rem;">
+  <h3>Let's Connect</h3>
+  <p style="color:var(--text-muted); margin-top:0.5rem;">I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
+  <div style="display:flex; justify-content:center; gap:1.5rem; margin-top:1rem;">
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">Email</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">GitHub</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">LinkedIn</a>
+  </div>
+  <p style="margin-top:1rem; font-size:0.85rem; color:var(--text-muted);">&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
 </footer>
+
+<!-- bottom mobile nav -->
+<nav class="bottom-nav">
+  <a href="index.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="about.html" class="active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+  <a href="projects.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    <span>Projects</span>
+  </a>
+  <a href="planner.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>Planner</span>
+  </a>
+  <a href="contact.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<!-- scroll animations -->
+<script src="../js/animation.js"></script>
 
 </body>
 </html>
