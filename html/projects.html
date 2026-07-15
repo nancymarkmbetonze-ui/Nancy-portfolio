@@ -10,76 +10,113 @@
 
 <!-- header -->
 <header>
-  <div class="site-branding">
-    <span class="site-name">Nancy Mark</span>
-    <span class="site-tagline">Python Developer | Aviation Manager &amp; Dangerous Goods Handler</span>
-    <span class="site-subline">Miva Open University &amp; Universal School of Aviation</span>
+  <div class="brand">
+    <img src="../images/Nancy.png" alt="Nancy Mark">
+    <h1>Nancy Mark</h1>
   </div>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="planner.html">Planner</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<!-- projects-intro -->
-<section id="projects-intro">
-  <h2>Projects</h2>
-  <p>A selection of sample projects reflecting my interests in backend development, API design, and automation, connecting my technical work with my aviation background.</p>
+<main class="container">
+
+<!-- hero -->
+<section style="padding:3rem 0 1rem;">
+  <span class="pill">Projects</span>
+  <h2 style="font-size:clamp(2rem, 4vw, 2.8rem); margin-top:1rem;">Selected Work</h2>
+  <p style="color:var(--text-muted); margin-top:0.75rem; font-size:1.05rem;">A selection of sample projects reflecting my interests in backend development, API design, and automation, connecting my technical work with my aviation background.</p>
 </section>
 
-<!-- projects-list -->
-<section id="projects-list">
-  <article class="project-card">
-    <img src="../images/project1.png" alt="Flight Data REST API">
-    <h2>Flight Data REST API</h2>
-    <p>A backend service built with FastAPI that provides flight schedule and status information through clean REST endpoints, supporting lookups by flight number, route, and current status.</p>
-    <ul class="tech-tags">
-      <li>FastAPI</li>
-      <li>Python</li>
-      <li>REST API Design</li>
-    </ul>
-    <a href="#" class="btn">View Details (Sample Project)</a>
-  </article>
-  <article class="project-card">
-    <img src="../images/project2.png" alt="Dangerous Goods Compliance Checker">
-    <h2>Dangerous Goods Compliance Checker</h2>
-    <p>An application concept combining backend logic with aviation domain knowledge, allowing users to input cargo details and check them against dangerous goods handling categories and restrictions.</p>
-    <ul class="tech-tags">
-      <li>Django</li>
-      <li>Python</li>
-      <li>Domain Rules Engine</li>
-    </ul>
-    <a href="#" class="btn">View Details (Sample Project)</a>
-  </article>
-  <article class="project-card">
-    <img src="../images/project3.png" alt="Task Automation Pipeline">
-    <h2>Task Automation Pipeline</h2>
-    <p>An automation workflow using n8n and Python to pull data from a source, process it, and deliver results to another system, reducing manual repetitive work.</p>
-    <ul class="tech-tags">
-      <li>n8n</li>
-      <li>Python</li>
-      <li>Automation</li>
-    </ul>
-    <a href="#" class="btn">View Details (Sample Project)</a>
-  </article>
+<!-- projects grid -->
+<section class="fade-in-section" style="margin-top:1rem;">
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+    <div class="glass-card" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
+      <img src="../images/project1.png" alt="Flight Data REST API" style="width:100%; height:180px; object-fit:cover; border-radius:16px 16px 0 0;">
+      <div style="padding:1.5rem;">
+        <h3>Flight Data REST API</h3>
+        <p style="color:var(--text-muted); margin-top:0.5rem;">A backend service built with FastAPI that provides flight schedule and status information through clean REST endpoints, supporting lookups by flight number, route, and current status.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+          <span class="tag">FastAPI</span>
+          <span class="tag">Python</span>
+          <span class="tag">REST API Design</span>
+        </div>
+        <a href="#" class="btn btn-outline" style="margin-top:1rem; display:inline-block;">View Details (Sample Project)</a>
+      </div>
+    </div>
+    <div class="glass-card" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
+      <img src="../images/project2.png" alt="Dangerous Goods Compliance Checker" style="width:100%; height:180px; object-fit:cover; border-radius:16px 16px 0 0;">
+      <div style="padding:1.5rem;">
+        <h3>Dangerous Goods Compliance Checker</h3>
+        <p style="color:var(--text-muted); margin-top:0.5rem;">An application concept combining backend logic with aviation domain knowledge, allowing users to input cargo details and check them against dangerous goods handling categories and restrictions.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+          <span class="tag">Domain Rules Engine</span>
+        </div>
+        <a href="#" class="btn btn-outline" style="margin-top:1rem; display:inline-block;">View Details (Sample Project)</a>
+      </div>
+    </div>
+    <div class="glass-card" style="display:flex; flex-direction:column; padding:0; overflow:hidden;">
+      <img src="../images/project3.png" alt="Task Automation Pipeline" style="width:100%; height:180px; object-fit:cover; border-radius:16px 16px 0 0;">
+      <div style="padding:1.5rem;">
+        <h3>Task Automation Pipeline</h3>
+        <p style="color:var(--text-muted); margin-top:0.5rem;">An automation workflow using n8n and Python to pull data from a source, process it, and deliver results to another system, reducing manual repetitive work.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+          <span class="tag">n8n</span>
+          <span class="tag">Python</span>
+          <span class="tag">Automation</span>
+        </div>
+        <a href="#" class="btn btn-outline" style="margin-top:1rem; display:inline-block;">View Details (Sample Project)</a>
+      </div>
+    </div>
+  </div>
 </section>
+
+</main>
 
 <!-- footer -->
-<footer>
-  <h2>Let's Connect</h2>
-  <p>I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
-  <ul>
-    <li><a href="#">Email</a></li>
-    <li><a href="#">GitHub</a></li>
-    <li><a href="#">LinkedIn</a></li>
-  </ul>
-  <p>&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
+<footer style="background:var(--surface); border-top:1px solid var(--border); padding:3rem 2rem; text-align:center; margin-top:3rem;">
+  <h3>Let's Connect</h3>
+  <p style="color:var(--text-muted); margin-top:0.5rem;">I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
+  <div style="display:flex; justify-content:center; gap:1.5rem; margin-top:1rem;">
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">Email</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">GitHub</a>
+    <a href="#" style="color:var(--text-muted); text-decoration:none;">LinkedIn</a>
+  </div>
+  <p style="margin-top:1rem; font-size:0.85rem; color:var(--text-muted);">&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
 </footer>
+
+<!-- bottom mobile nav -->
+<nav class="bottom-nav">
+  <a href="index.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="about.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>About</span>
+  </a>
+  <a href="projects.html" class="active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    <span>Projects</span>
+  </a>
+  <a href="planner.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>Planner</span>
+  </a>
+  <a href="contact.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<!-- scroll animations -->
+<script src="../js/animation.js"></script>
 
 </body>
 </html>
