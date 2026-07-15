@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nancy Mark | Contact</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- header -->
+<header>
+  <div class="site-branding">
+    <span class="site-name">Nancy Mark</span>
+    <span class="site-tagline">Python Developer | Aviation Manager &amp; Dangerous Goods Handler</span>
+    <span class="site-subline">Miva Open University &amp; Universal School of Aviation</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- contact form -->
+<section id="contact">
+  <h1>Get In Touch</h1>
+  <p>Interested in collaborating or discussing opportunities? Send a message below.</p>
+
+  <form id="contact-form" novalidate>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <span class="error" id="name-error"></span>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <span class="error" id="email-error"></span>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+    <span class="error" id="phone-error"></span>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+    <span class="error" id="message-error"></span>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <p id="form-success" class="hidden">Message sent successfully.</p>
+</section>
+
+<!-- footer -->
+<footer>
+  <h2>Let's Connect</h2>
+  <p>I am open to collaborations, internship opportunities, and conversations about backend development and aviation.</p>
+  <ul>
+    <li><a href="#">Email</a></li>
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">LinkedIn</a></li>
+  </ul>
+  <p>&copy; 2026 Nancy Mark. Built with Semantic HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<!-- contact script -->
+<script src="../js/contact.js"></script>
+
+</body>
+</html>
